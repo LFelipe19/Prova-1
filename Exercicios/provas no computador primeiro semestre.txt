@@ -1,0 +1,142 @@
+#include <stdio.h>
+#include <math.h>
+int main(void) {
+    /*1 Faça um programa aonde você digita um número. Se este número for par imprima seu dobro, se for ímpar imprima o seu triplo.*/
+
+    int numero1 = 0;
+    printf("Digite um numero");
+    scanf("%d", &numero1);
+    numero1 % 2 == 0 ? printf("o resultado eh: %d", numero1 * 2) : printf("o resultado eh: %d", numero1 * 3);
+return 0;
+   /*Mesmo exercicio porem de forma diferente*/
+   /*
+    int numero1= 0,resultado;
+    printf( "Digite um numero");
+    scanf("%d",&numero1);
+    if (numero1 %2 == 0)
+    {
+        resultado = numero1*2;
+    }else if(numero1 %2 != 0)
+    {
+        resultado = numero1*3;
+    }
+    printf("o resultado e: %d",resultado);
+
+   */
+    }
+
+ #include <stdio.h>
+#include <math.h>
+#include <string.h>
+
+int main(void) {
+    /* Faça um programa aonde você digita dois números e imprima a metade do maior número.*/
+    double n1, n2;
+    double resultado;
+
+    printf("Digite o primeiro numero: ");
+    scanf("%lf", &n1);
+    printf("Digite o segundo numero: ");
+    scanf("%lf", &n2);
+    if (n1 > n2) {
+        resultado = n1 / 2;
+        printf("O resultado eh:  %.2lf ", resultado);
+
+    } else if (n2 > n1) {
+        resultado = n2 / 2;
+        printf("O resultado eh:  %.2lf ", resultado);
+    } else {
+        printf("Os numeros sao iguais");
+    }
+}
+ 
+int main(void) {
+    /* Mesmo exercico */
+
+    double numero1, numero2;
+    printf("Digite o primeiro numero: ");
+    scanf("%lf", &numero1);
+    printf("Digite o segundo numero: ");
+    scanf("%lf", &numero2);
+    numero1 > numero2 ? printf("O resultado eh:  %.2lf ", numero1/2) : printf("O resultado eh:  %.2lf", numero2/2);
+    return 0;
+}
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+/*3)Faça um programa que leia dois números e depois mostre o menu abaixo. Se o usuário selecionar a opção 1, imprima os números em ordem crescente, se o usuário selecionar a opção 2, imprima os números em ordem decrescente.*/
+
+int n1,n2;
+int op; 
+printf("Insira numero: ");
+scanf("%d",&n1); 
+printf("Insira numero: "); scanf("%d",&n2); printf("Opçoes: 1-Em ordem crescente, 2-Em ordem decrescente\n"); scanf("%d",&op);
+ switch(op) { 
+case 1: if (n1<n2)
+{
+printf("%d %d",n1,n2);
+}
+ else
+{
+printf("%d %d",n2,n1);
+} 
+break; 
+case 2: if (n1>n2)
+{
+printf("%d %d",n1,n2);
+} 
+else {printf("%d %d",n2,n1);
+}
+break; 
+default: 
+printf("Opcao invalida"); 
+break;
+}
+    return 0;
+}
+/* Mesmo exercicio
+#include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
+int main()
+{
+    int n1,n2;
+int op; 
+printf("Insira numero: ");
+scanf("%d",&n1); 
+printf("Insira numero: "); scanf("%d",&n2); printf("Opçoes: 1-Em ordem crescente, 2-Em ordem decrescente\n"); scanf("%d",&op);
+ switch(op) { 
+case 1: n1<n2 ? printf("%d %d",n1,n2) : printf("%d %d",n2,n1);
+break; 
+case 2: n1>n2 ? printf("%d %d",n1,n2) : printf("%d %d",n2,n1);
+break; 
+default: 
+printf("Opcao invalida"); 
+break;
+}
+    return 0;
+}
+*/
+
+
+/*4)Faça um programa que leia um número e imprima se ele é positivo, negativo ou nulo.*/
+
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+
+int main(void) {
+    int numero;
+    printf("Digite qualquer numero:");
+    scanf("%d", &numero);
+
+    if (numero > 0) {
+        printf("O numero eh positivo");
+    } else if (numero < 0) {
+        printf("O numero eh negativo");
+    } else {
+        printf("O numero eh nulo");
+    }
+}
