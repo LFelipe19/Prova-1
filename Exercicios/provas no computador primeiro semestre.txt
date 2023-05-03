@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 int main(void) {
-    /*1 Faça um programa aonde você digita um número. Se este número for par imprima seu dobro, se for ímpar imprima o seu triplo.*/
+    /*1. Faça um programa aonde você digita um número. Se este número for par imprima seu dobro, se for ímpar imprima o seu triplo.*/
 
     int numero1 = 0;
     printf("Digite um numero");
